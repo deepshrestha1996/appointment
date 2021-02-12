@@ -1,0 +1,28 @@
+/* 
+ theme name : Fictional College 
+ Author: Deep
+ Version: 1.0
+*/
+/*
+#banner {
+  width: 100%;
+  background-image: url("../images/banner.png");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+*/
+/*
+body{
+    background: url("../images/banner.png") no-repeat center center fixed;
+    width: 100%;
+    height: 700px;
+}
+*/
+// 
+@import "./component/banner";
+@import "./component/header";
+@import "./component/subscribe-form";
+
+@import "./layouts/container";

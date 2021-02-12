@@ -1,0 +1,122 @@
+/* 
+ theme name : Fictional College 
+ Author: Deep
+ Version: 1.0
+*/
+/*
+#banner {
+  width: 100%;
+  background-image: url("../images/banner.png");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+*/
+/*
+body{
+    background: url("../images/banner.png") no-repeat center center fixed;
+    width: 100%;
+    height: 700px;
+}
+*/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+body .banner, html .banner {
+  background: url("../images/banner.png") no-repeat center center;
+  width: 100%;
+  height: 100%;
+}
+
+.header-t {
+  font-family: "Nunito Sans", sans-serif;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  color: white;
+  height: 45px;
+}
+.header-t ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-block-end: 0em;
+  padding-inline-start: 40px;
+  font-size: 16px;
+  line-height: 37.5px;
+}
+.header-t ul .left {
+  float: left;
+}
+.header-t ul .right {
+  float: right;
+}
+.header-t ul li {
+  display: inline;
+}
+.header-t ul li a {
+  text-decoration: none;
+  color: white;
+  padding-right: 32px;
+}
+.header-t ul li img {
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-right: 12px;
+}
+
+.header-b {
+  font-family: "Nunito Sans", sans-serif;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 45px;
+  width: 100%;
+  color: white;
+  height: 80px;
+}
+.header-b .left {
+  float: left;
+}
+.header-b .left b {
+  font-size: 32px;
+  line-height: 43px;
+}
+.header-b .right {
+  float: right;
+  text-transform: uppercase;
+  line-height: 19px;
+}
+.header-b li {
+  display: inline;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 1px;
+}
+.header-b li a {
+  text-decoration: none;
+  color: white;
+  padding-right: 40px;
+}
+.header-b li button {
+  background-color: #007bff;
+  border: #007bff;
+  font-size: 12px;
+  line-height: 37.5px;
+  text-transform: uppercase;
+  color: white;
+  width: 130px;
+  height: 36px;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
