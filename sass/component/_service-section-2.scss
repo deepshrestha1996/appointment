@@ -1,0 +1,63 @@
+.service-section-2{
+    height: 782px;
+    width: 100%;
+    position: relative;
+    .section-title{
+        position: absolute;
+        height: 84px;
+        width: 512px;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        .content{
+            
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.9);
+        }
+        .heading{
+            font-size: 36px;
+            font-weight: bolder;
+        }
+        
+    }
+}
+.team-box-container{
+    display: flex;
+    position: relative;
+    top: 212px;
+    height: 490px;
+    gap: 30px;
+
+}
+.team-box-item{
+    width: 33.33333%;
+    .image{
+        height: 278px;
+        width: 370px;
+    }
+    .learn-more{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+        color: rgb(0, 123, 225);
+        margin-top: 20px;
+
+    }
+    .icon{
+        margin-left: 8px;
+        height: 8px;
+        width: 14px;
+    }
+    .heading{
+        font-size: 20px;
+        font-weight: bolder;
+        line-height: 31.25px;
+    }
+    .content{
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    
+}

@@ -2,9 +2,12 @@
     font-family: 'Nunito Sans', sans-serif;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    left: 0px;
     width: 100%;
     color: white;
-    height: 45px;
+    height: 46px;
+    
     ul{
         display: block;
         list-style-type: disc;
@@ -16,27 +19,48 @@
         line-height: 37.5px;
         .left{
             float: left;
+            padding-top: 11px;
+            li{
+                display: inline;
+                
+                a{
+                    text-decoration: none;
+                    color: white;
+                    padding-right: 32px;
+                }
+                img{
+                    font-size: 14px;
+                    line-height: 18px;
+                    vertical-align: middle;
+                    padding-right: 12px;
+
+                    
+                }
+                
+                
+            }
         }
         .right{
             float: right;
+            text-align: center;
+            li{
+                display: inline;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                img{
+                    font-size: 14px;
+                    line-height: 18px;
+                    vertical-align: middle;
+                    padding: 13px 16px 13px 18px; 
+                }
+                
+                
+            }
         }
         
-        li{
-            display: inline;
-            a{
-                text-decoration: none;
-                color: white;
-                padding-right: 32px;
-            }
-            img{
-                font-size: 14px;
-                line-height: 18px;
-                padding-top: 10px;
-                padding-right: 12px;
-            }
-            
-            
-        }
+        
 
     }
 }
@@ -44,7 +68,7 @@
     font-family: 'Nunito Sans', sans-serif;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 45px;;
+    margin-top: 46px;;
     width: 100%;
     color: white;
     height: 80px;
@@ -57,12 +81,13 @@
       
     }
     .right{
+        
         float: right;
         text-transform: uppercase;
         line-height: 19px;
     }
     li{
-        
+        text-align: center;
         display: inline;
         font-size: 14px;
         line-height: 19px;
@@ -73,21 +98,11 @@
             text-decoration: none;
             color: white;
             padding-right: 40px;
+    
         }
         button{
-            background-color: rgba(0, 123, 255);
-            border: rgba(0, 123, 255);
-            font-size: 12px;
-            line-height: 37.5px;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255);
             width: 130px;
             height: 36px;
-            letter-spacing: 2px;
-
-
-
-
         }
         
     }

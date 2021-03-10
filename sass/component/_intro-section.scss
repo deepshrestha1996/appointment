@@ -1,0 +1,38 @@
+.intro-section{
+    position: absolute;
+    height: 733px;
+    width: 1170px; 
+    background-color: rgb(244, 246, 252);
+    margin-top: 80px;    
+}
+.author-intro{
+    font-family: 'Nunito Sans', sans-serif;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 555px;
+    width: 585px;
+    height: 673px;
+    background-color: rgba(255 , 255, 255, 1);
+    box-shadow: 5px 6px 3px rgba(0, 0, 0, 0.16), 5px 6px 6px rgba(0, 0, 0, 0.23);
+
+    h3{
+        
+        margin-top: 64px;
+        margin-left: 64px;
+        margin-right: 161px;
+        font-size: 30px;
+        line-height: 37.5px;
+    }
+    p{
+        margin-top: 24px;
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+    button{
+        margin-top: 32px;
+        margin-left: 64px;
+        margin-right: 331px;
+        width: 190px;
+        height: 48px;
+    }
+}

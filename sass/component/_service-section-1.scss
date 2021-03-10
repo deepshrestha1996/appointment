@@ -1,0 +1,31 @@
+.service-section-1-container{
+    margin-top: 80px;
+    display: flex;
+    height: 154px;
+    gap: 30px;
+    
+}
+.service-section-1-item{
+    width: 33.3333%;
+    position: relative;
+    img{
+        
+        height: 48px;
+        width: 48px;
+    }
+    a{
+        position: absolute;
+        margin-left: 68px;
+    }
+    .heading{
+        font-size: 20px;
+        font-weight: bolder;
+        line-height: 31.2px;
+    }
+    .content{
+        margin-top: 43px;
+        font-size: 18px;
+        line-height: 28.8px;
+
+    }
+}
