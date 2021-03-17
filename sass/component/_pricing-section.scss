@@ -1,0 +1,124 @@
+.pricing-section{
+    height: 971px;
+    width: 1920px;
+    position: relative;
+
+    .section-title{
+        position: absolute;
+        height: 116px;
+        width: 770px;
+        margin-top: 80px;
+        margin-left: 575px;
+        text-align: center;
+        .heading{
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 1.27em;
+        }
+        .content{
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 20px;
+            line-height: 1.6em;
+    
+        }
+
+    }
+    
+}
+.pricing-table{
+    position: absolute;
+    display: flex;
+
+    height: 647px;
+    width: 1170px;
+    margin-top: 244px;
+
+    .personal{
+        width: 390px;
+        height: 607px;
+        background-color: rgba(247, 249, 255, 1);
+        margin-top: 20px;
+        text-align: center;
+        
+
+    }
+    .business{
+        width: 390px;
+        height: 647px;
+        background-color: rgba(255, 255, 255, 1);
+        border-color: rgba(224, 224, 224, 1);
+        border-width: 1px;
+        border-style: solid;
+        text-align: center;
+
+
+
+    }
+    .enterprises{
+        margin-top: 20px;
+        width: 390px;
+        height: 607px;
+        background-color:rgba(247, 249, 255, 1);
+        text-align: center;
+    }
+
+    .heading{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.37em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 48px;
+        display: block;
+
+    }
+    .sign{
+        font-size: 17px;
+        line-height: 1.35em;
+        font-weight: 600;
+        color: rgba(153, 153, 153, 1);
+       
+    }
+    .price{
+        font-size: 92px;
+        line-height: 1em;
+        font-weight: 600;
+
+    }
+    .billed{
+        display: block;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 1.33em;
+        color: rgba(153, 153, 153, 1);
+    }
+    button{
+        display: block;
+        margin-top: 24px;
+        margin-left: 71px;
+        height: 48px;
+        width: 249px;
+    }
+    .pricing-hr{
+
+    }
+    .bold-content{
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 2.3em;
+        margin-top: 32px;
+        margin-left: 79px;
+        margin-right: 79px;
+
+    }
+    .light-content{
+        display: block;
+        font-size: 16px;
+        line-height: 2.3em;
+        margin-left: 79px;
+        margin-right: 79px;
+    }
+
+}

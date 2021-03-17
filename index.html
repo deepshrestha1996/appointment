@@ -7,31 +7,46 @@
 
 	<title>appointment</title>
 
-    <link rel="stylesheet" href="./style.css">
-
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
     
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 
-    
+    <!-- slick carousel -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/costom.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- fancybox 3-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <!-- fancybox 2 -->
+    <!-- <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" /> -->
+    
+
+    <!-- optionally adding helpers - buttons, thumbnail or media -->
+    <!-- <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" /> -->
+
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    
+    
+    
 
 
 </head>
 
 <body>
     <div class="banner">
+        <div class="banner-layer">
+
         <div class="header-t">
             <div class="container">
                 <ul>
                     <div class="left">
-                        <li><img src = "./images/icons-svg/call.svg" alt="callSVG" height="24px" width="24px"/><a href="">(222) 400-630</a></li>
+                        <li><img src = "./images/icons-svg/call.svg" alt="callSVG" height="20px" width="26px"/><a href="">(222) 400-630</a></li>
                     
                         <li><img src = "./images/icons-svg/mail.svg" alt="mailSVG" height="24px" width="24px"/><a href=""> info@domain.com</a></li>
                     </div>
@@ -55,18 +70,28 @@
             <div class="container">
                 <ul>
                     <div class="left">
-                        <li><b>Appointment</b></li>
+                        <li class="title">Appointment</li>
 
                         
                     </div>
                     <div class="right">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href=""><img src = "./images/icons-svg/search.svg" alt="searchSVG" height="18px" width="18px"/></a></li>
+                        <!-- <div class="dropdown">
+                            <li><button class="dropbtn">Home</button></li>
+                            <div class="dropdown-content">
+                                <a href="#">Home 1</a>
+                                <a href="#">Home 2</a>
+                                <a href="#">Home 3</a>
+
+                            </div>
+                        </div> -->
+                        <li class="navbar-content"><a href="">Home</a></li>
+
+                        <li class="navbar-content"><a href="">Services</a></li>
+                        <li class="navbar-content"><a href="">Portfolio</a></li>
+                        <li class="navbar-content"><a href="">Blog</a></li>
+                        <li class="navbar-content"><a href="">Services</a></li>
+                        <li class="navbar-content"><a href="">Contact</a></li>
+                        <li class="navbar-content"><a href=""><img src = "./images/icons-svg/search.svg" alt="searchSVG" height="18px" width="18px"/></a></li>
                         <li><button class="primary-button">Booking</button></li>
                     </div>
 
@@ -77,20 +102,20 @@
             </div>
 
         </div>
-
+    </div>
         <div class="container">
 
  
                 <div class="subscribe-form">
                     <div class="subscribe-form-container">
-                        <h2>Ready to escape your corporate job?</h2>
-                        <p>Join me to learn how to unlock your inner greatness and build a profitable business you love!</p>
+                        <p class="heading">Ready to escape your corporate job?</p>
+                        <p class="content">Join me to learn how to unlock your inner greatness and build a profitable business you love!</p>
                         <div class="inputText">
                             <input type="text" placeholder="First Name">                      
                             <input type="email" placeholder="Your Email Address">
 
                         </div>
-                        <button class="primary-button">sign up for news letter</button>
+                        <button class="primary-button">sign up for newsletter</button>
 
                     </div>
                     
@@ -168,38 +193,230 @@
             <a class="content">Our commitment is to provide comprehensive quality care</a>
         </div>
 
-        <div class="container center-slider">
-            <div class="team-box-container">
+        <div class="container">
+            <div class="team-box-container service-section-carousel">
                 <div class="team-box-item">
                     <img class="image" src="./images/services-1.png" alt="">
                     <a class="heading">Business Planning & Strategy</a><br>
                     <a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-                    <p class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg" alt=""></p>
+                    <br><a href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg" alt=""></a>
                 </div>
                 <div class="team-box-item">
                     <img class="image" src="./images/services-2.png" alt="">
                     <a class="heading">Financial Projections and Analysis</a><br>
 
                     <a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-                    <p href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg" alt=""></p>
+                    <br><a href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg" alt=""></a>
 
                 </div>
                 <div class="team-box-item">
                     <img class="image" src="./images/services-3.png" alt="">
                     <a class="heading">Strategic Planning</a><br>
                     <a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-                    <p href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg" alt=""></p>
+                    <br><a href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg" alt=""></a>
                 </div>
             </div>
 
 
         </div>
+        
       
-
-    </div>
 
     
 
+
+
+    </div>
+
+    <div class="featured-on-section">
+        <a>as featured in</a>
+        <div class="container featured-on-section-container featured-on-section-carousel">
+
+            <div class="box-item box-item-1">
+                <img src="./images/icons-svg/algolia.svg" alt="">
+            </div>
+            <div class="box-item box-item-2">
+                <img src="./images/icons-svg/android.svg" alt="">
+            </div>
+            <div class="box-item box-item-3">
+                <img src="./images/icons-svg/codeclimate.svg" alt="">
+            </div>
+            <div class="box-item box-item-4">
+                <img src="./images/icons-svg/akamai.svg" alt="">
+            </div>
+            <div class="box-item box-item-5">
+                <img src="./images/icons-svg/aws.svg" alt="">
+            </div>
+            <div class="box-item box-item-6">
+                <img src="./images/icons-svg/behance.svg" alt="">
+            </div>
+    
+
+        </div>
+        
+        
+    </div>
+    <div class="video-section">
+        <div class="video-section-layer">
+            <div class="video-section-title">
+                <a class="heading">Booking & Scheduling Video</a><br>
+                <a class="video-content">Take a tour & see the features</a>
+                <br>
+                <a data-fancybox= "gallery" href="./images/banner.png"><img src="./images/icons-svg/play.svg" alt=""></a> 
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="our-team-section">
+        <div class="our-team-section-title">
+            <a class="heading">Our Team</a>
+            <br><a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
+
+        </div>
+
+
+        <div class="container">
+            <div class="team-box-container team-box-container-carousel">
+
+                <div class="team-box-item">
+                    <img class="image" src="./images/eula.png" alt="">
+                    <a class="name">Eulalia Daugherty</a>
+                    <br><a class="position">Partner & CFO</a>
+                    <br><a class="desc">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
+    
+                </div>
+                <div class="team-box-item">
+                    <img class="image" src="./images/katlyn.png" alt="">
+                    <a class="name">Katlynn Pouros</a>
+                    <br><a class="position">Partner & CFO</a>
+                    <br><a class="desc">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
+    
+                </div>
+                <div class="team-box-item">
+                    <img class="image" src="./images/michael.png" alt="">
+                    <a class="name">Michael Armstrong</a>
+                    <br><a class="position">Partner & CFO</a>
+                    <br><a class="desc">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
+    
+                </div>
+    
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="cta-text">
+        <div class="container">
+            <a class="heading">Book your visit online and save up to -30%</a>
+            <br><a class="content">First 100 booking will be awarded with free consultation.</a>
+            <button class="success-button">make an appointment</button>
+        </div>
+
+    </div>
+    <div class="pricing-section">
+        <div class="section-title">
+
+            <a class="heading">Pricing Table</a>
+            <br><a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
+    
+
+        </div>
+        <div class="container">
+            <div class="pricing-table">
+                <div class="personal">
+                    <span class="heading">personal</span>
+                    <span class="sign">$</span>
+                    <span class="price">0</span>
+                    <span class="billed">billed per month</span>
+                    <button class="primary-button">make an appointment</button>
+                    <hr class="pricing-hr">
+                    <span class="bold-content">Limited Access With 1 Logins 50 Form Submissions 200 Bonus Points For members
+                        </span>
+                    <span class="light-content">Shared Domain 2 GB Cloud Storage Access Limited Support / 20 Chats</span>
+
+
+                </div>
+                <div class="business">
+                        <span class="heading">business</span>
+                    <span class="sign">$</span>
+                    <span class="price">89</span>
+                    <span class="billed">billed per month</span>
+                    <button class="primary-button">make an appointment</button>
+                    <hr class="pricing-hr">
+                    <span class="bold-content">Limited Access With 1 Logins 50 Form Submissions 200 Bonus Points For members
+                        </span>
+                    <span class="light-content">Shared Domain 2 GB Cloud Storage Access Limited Support / 20 Chats</span>
+
+                    
+
+                </div>
+                <div class="enterprises">
+                    <span class="heading">enterprises</span>
+                    <span class="sign">$</span>
+                    <span class="price">299</span>
+                    <span class="billed">billed per month</span>
+                    <button class="primary-button">make an appointment</button>
+                    <hr class="pricing-hr">
+                    <span class="bold-content">Limited Access With 1 Logins 50 Form Submissions 200 Bonus Points For members
+                        </span>
+                    <span class="light-content">Shared Domain 2 GB Cloud Storage Access Limited Support / 20 Chats</span>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="appointment-booking">
+
+        <div class="appointment-booking-layer">
+            <div class="booking-section-title">
+                <a class="section-title">Book a Business Choaching Appointment</a>
+                <a class="section-content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
+
+            </div>
+            <img src="./images/Calender.png" alt="" class="calander">
+
+        </div>
+
+
+    </div>
+    <div>
+
+        
+    </div>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick carousel -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <!-- fancybox 3 -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    <!-- fancybox 2 -->
+    <!-- <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script> -->
+
+    <!-- optionally adding helpers - buttons, thumbnail or media -->
+    <!-- <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script> -->
+
+    <!-- js -->
+    <script src="./js/costom.js"></script>
+
+
+    
 </body>
 
 </html>

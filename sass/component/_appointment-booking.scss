@@ -1,0 +1,40 @@
+.appointment-booking{
+    width: 1920px;
+    height: 825px;
+    position: relative;
+    background: url('./../../images/booking-bg.jpg') no-repeat center center;
+    z-index: 0;
+}
+.appointment-booking-layer{
+    // position: absolute;
+    height: 825px;
+    width: 1920px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+
+}
+.booking-section-title{
+    position: absolute;
+    height: 116px;
+    width: 770px;
+    margin-left: 575px;
+    margin-top: 80px;
+    text-align: center;
+    color:#fff;
+    .section-title{
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 1.25em;
+    }
+    .section-content{
+        font-size: 20px;
+        line-height: 1.6em;
+    }
+
+}
+.calander{
+    height: 501px;
+    width: 570px;
+    margin-left: 675px;
+    margin-top: 244px;
+}

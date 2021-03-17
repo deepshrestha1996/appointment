@@ -1,0 +1,85 @@
+.featured-on-section{
+    margin-top: 80px;
+    position: relative;
+    height: 308px;
+    width: 100%;
+    background-color: rgba(247, 249, 255, 1);
+
+    a{  
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.3;
+    }
+    .featured-on-section-container{
+        // position: absolute; doing this gives error dont know why
+        display: flex;
+        gap: 48px;
+        text-align: center;
+        // left: 50%;
+        // transform: translateX(-50%);
+
+       
+
+        .box-item-1{
+            height: 38.38px;
+            margin-top: 177px;
+        }
+        .box-item-2{
+            height: 33.51px;
+            margin-top: 180px;
+        }
+        .box-item-3{
+            height: 17.35px;
+            margin-top: 188px;
+
+        }
+        .box-item-4{
+            height: 63.12px;
+            margin-top: 165px;
+
+        }
+        .box-item-5{
+            height: 59.77px;
+            margin-top: 167px;
+
+        }
+        .box-item-6{
+            height: 28.68px;
+            margin-top: 182px;
+
+        }
+    }
+}
+
+@media only screen and (max-width:  1220px) and (min-width: 797px){
+
+        
+    .box-item{
+        margin-left: 68px;
+    }
+
+
+}
+@media only screen and (max-width:  798px) and (min-width: 515px){
+
+        
+    .box-item{
+        margin-left: 68px;
+    }
+
+
+}
+@media only screen and (max-width:  515px) {
+
+        
+    .box-item{
+        margin-left: 68px;
+    }
+
+
+}

@@ -28,19 +28,21 @@ body, html {
 body .banner, html .banner {
   background: url("../images/banner.png") no-repeat center center;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 1920px;
+  height: 1008px;
+}
+body .banner-layer, html .banner-layer {
+  background-color: rgba(0, 0, 0, 0.16);
 }
 
 .header-t {
-  font-family: "Nunito Sans", sans-serif;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.16);
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 1920px;
   color: white;
-  height: 46px;
+  height: 45px;
 }
 .header-t ul {
   display: block;
@@ -48,16 +50,16 @@ body .banner, html .banner {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-block-end: 0em;
-  padding-inline-start: 40px;
-  font-size: 16px;
-  line-height: 37.5px;
+  padding-inline-start: 0px;
+  font-size: 0px;
 }
 .header-t ul .left {
   float: left;
-  padding-top: 11px;
+  margin-top: 12px;
 }
 .header-t ul .left li {
   display: inline;
+  font-size: 16px;
 }
 .header-t ul .left li a {
   text-decoration: none;
@@ -66,9 +68,8 @@ body .banner, html .banner {
 }
 .header-t ul .left li img {
   font-size: 14px;
-  line-height: 18px;
   vertical-align: middle;
-  padding-right: 12px;
+  padding-right: 10px;
 }
 .header-t ul .right {
   float: right;
@@ -91,23 +92,42 @@ body .banner, html .banner {
 .header-b {
   font-family: "Nunito Sans", sans-serif;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.16);
   margin-top: 46px;
-  width: 100%;
+  width: 1920px;
   color: white;
   height: 80px;
 }
+.header-b ul {
+  padding-inline-start: 0px;
+}
 .header-b .left {
   float: left;
+  margin-left: 0px;
 }
-.header-b .left b {
+.header-b .title {
   font-size: 32px;
-  line-height: 43px;
+  font-weight: 600;
+  line-height: 1.34;
 }
 .header-b .right {
   float: right;
+}
+.header-b .right .dropdown {
+  overflow: hidden;
+}
+.header-b .right .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+.header-b .navbar-content {
   text-transform: uppercase;
-  line-height: 19px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 1px;
 }
 .header-b li {
   text-align: center;
@@ -126,40 +146,79 @@ body .banner, html .banner {
   height: 36px;
 }
 
+@media only screen and (max-width: 1155px) {
+  .header-b {
+    font-family: "Nunito Sans", sans-serif;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 46px;
+    width: 100%;
+    color: white;
+    height: 80px;
+  }
+  .header-b .left {
+    float: left;
+  }
+  .header-b .left b {
+    font-size: 32px;
+    line-height: 43px;
+  }
+  .header-b .right {
+    float: right;
+    text-transform: uppercase;
+    line-height: 19px;
+  }
+  .header-b li {
+    text-align: center;
+    display: inline;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1px;
+  }
+  .header-b li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 40px;
+  }
+  .header-b li button {
+    width: 130px;
+    height: 36px;
+  }
+}
 .subscribe-form {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 100;
-  margin-top: 400px;
-  height: 530px;
+  margin-top: 318px;
+  height: 499px;
   width: 470px;
 }
 
-.subscribe-form-container h2 {
-  font-family: "Nunito Sans", sans-serif;
-  margin-top: 50px;
+.subscribe-form-container .heading {
   margin-left: 50px;
   margin-right: 50px;
+  margin-block-start: 1.45em;
+  margin-block-end: 0em;
   font-size: 36px;
+  font-weight: 800;
   text-align: left;
-  line-height: 45px;
+  line-height: 1.25em;
 }
-.subscribe-form-container p {
-  font-family: "Nunito Sans", sans-serif;
-  margin-top: 15px;
+.subscribe-form-container .content {
   margin-left: 50px;
   margin-right: 50px;
+  margin-block-start: 0.8em;
+  margin-block-end: 0em;
   font-size: 20px;
+  line-height: 1.6em;
   text-align: left;
-  line-height: 32px;
 }
 .subscribe-form-container .inputText {
-  margin-top: 9px;
+  margin-top: 5px;
 }
 .subscribe-form-container .inputText input {
-  font-family: "Nunito Sans", sans-serif;
-  width: 370px;
-  height: 48px;
+  width: 365px;
+  height: 44px;
   margin-top: 16px;
   margin-left: 50px;
   margin-right: 50px;
@@ -186,7 +245,6 @@ body .banner, html .banner {
 }
 
 .author-intro {
-  font-family: "Nunito Sans", sans-serif;
   position: absolute;
   margin-top: 110px;
   margin-left: 555px;
@@ -217,12 +275,10 @@ body .banner, html .banner {
 
 .call-to-action {
   height: 412px;
-  width: 100%;
+  width: 1920px;
   background: url("./../../images/background.png") no-repeat center center;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
   margin-top: 893px;
-  z-index: 0;
 }
 
 .layer {
@@ -230,8 +286,8 @@ body .banner, html .banner {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 1920px;
+  height: 412px;
   z-index: 1;
 }
 .layer .content {
@@ -330,6 +386,15 @@ body .banner, html .banner {
   height: 278px;
   width: 370px;
 }
+.team-box-item .heading {
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 31.25px;
+}
+.team-box-item .content {
+  font-size: 18px;
+  line-height: 28.8px;
+}
 .team-box-item .learn-more {
   text-decoration: none;
   font-size: 16px;
@@ -343,14 +408,361 @@ body .banner, html .banner {
   height: 8px;
   width: 14px;
 }
-.team-box-item .heading {
-  font-size: 20px;
-  font-weight: bolder;
-  line-height: 31.25px;
+
+@media only screen and (max-width: 1220px) {
+  .service-section-2 {
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .team-box-container {
+    top: 212px;
+    height: 490px;
+    gap: 30px;
+  }
+
+  .team-box-item {
+    text-align: center;
+  }
+  .team-box-item .image {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
-.team-box-item .content {
+.video-section {
+  height: 472px;
+  width: 1920px;
+  background: url("./../../images/Background-1.png") no-repeat center center;
+  position: relative;
+}
+.video-section .video-section-layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 472px;
+  width: 1920px;
+}
+.video-section .video-section-title {
+  position: absolute;
+  text-align: center;
+  margin-top: 120px;
+  width: 482px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.video-section .video-section-title .video-content {
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.video-section .video-section-title .heading {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.video-section .video-section-title img {
+  margin-top: 48px;
+}
+
+.featured-on-section {
+  margin-top: 80px;
+  position: relative;
+  height: 308px;
+  width: 100%;
+  background-color: #f7f9ff;
+}
+.featured-on-section a {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.featured-on-section .featured-on-section-container {
+  display: flex;
+  gap: 48px;
+  text-align: center;
+}
+.featured-on-section .featured-on-section-container .box-item-1 {
+  height: 38.38px;
+  margin-top: 177px;
+}
+.featured-on-section .featured-on-section-container .box-item-2 {
+  height: 33.51px;
+  margin-top: 180px;
+}
+.featured-on-section .featured-on-section-container .box-item-3 {
+  height: 17.35px;
+  margin-top: 188px;
+}
+.featured-on-section .featured-on-section-container .box-item-4 {
+  height: 63.12px;
+  margin-top: 165px;
+}
+.featured-on-section .featured-on-section-container .box-item-5 {
+  height: 59.77px;
+  margin-top: 167px;
+}
+.featured-on-section .featured-on-section-container .box-item-6 {
+  height: 28.68px;
+  margin-top: 182px;
+}
+
+@media only screen and (max-width: 1220px) and (min-width: 797px) {
+  .box-item {
+    margin-left: 68px;
+  }
+}
+@media only screen and (max-width: 798px) and (min-width: 515px) {
+  .box-item {
+    margin-left: 68px;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .box-item {
+    margin-left: 68px;
+  }
+}
+.our-team-section {
+  height: 835px;
+  width: 100%;
+  position: relative;
+}
+.our-team-section .our-team-section-title {
+  position: absolute;
+  margin-top: 80px;
+  height: 116px;
+  width: 770px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.our-team-section .our-team-section-title .heading {
+  font-size: 36px;
+  line-height: 1.25em;
+  font-weight: 800;
+}
+.our-team-section .our-team-section-title .content {
+  font-size: 20px;
+  line-height: 1.6em;
+  margin-top: 8px;
+}
+.our-team-section .team-box-container {
+  height: 511px;
+  margin-top: 48px;
+  display: flex;
+  position: relative;
+  gap: 30px;
+}
+.our-team-section .team-box-container .team-box-item {
+  width: 33.333333%;
+}
+.our-team-section .team-box-container .image {
+  width: 370;
+  height: 278;
+}
+.our-team-section .team-box-container .name {
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 800;
+}
+.our-team-section .team-box-container .position {
+  font-size: 14px;
+  line-height: 2.2em;
+  color: #999999;
+}
+.our-team-section .team-box-container .desc {
   font-size: 18px;
-  line-height: 28.8px;
+  font-weight: 1.6;
+}
+
+@media only screen and (min-width: 1220) {
+  .our-team-section {
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .team-box-container .image {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.cta-text {
+  background-color: #007bff;
+  height: 172px;
+  width: 1920px;
+  color: #fff;
+  position: relative;
+}
+.cta-text .heading {
+  position: absolute;
+  font-size: 30px;
+  line-height: 1.25em;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.cta-text .content {
+  position: absolute;
+  font-size: 20px;
+  line-height: 1.6em;
+  margin-top: 73px;
+}
+.cta-text button {
+  margin-top: 39px;
+  margin-left: 921px;
+  height: 48px;
+  width: 248px;
+}
+
+.pricing-section {
+  height: 971px;
+  width: 1920px;
+  position: relative;
+}
+.pricing-section .section-title {
+  position: absolute;
+  height: 116px;
+  width: 770px;
+  margin-top: 80px;
+  margin-left: 575px;
+  text-align: center;
+}
+.pricing-section .section-title .heading {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.27em;
+}
+.pricing-section .section-title .content {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+.pricing-table {
+  position: absolute;
+  display: flex;
+  height: 647px;
+  width: 1170px;
+  margin-top: 244px;
+}
+.pricing-table .personal {
+  width: 390px;
+  height: 607px;
+  background-color: #f7f9ff;
+  margin-top: 20px;
+  text-align: center;
+}
+.pricing-table .business {
+  width: 390px;
+  height: 647px;
+  background-color: white;
+  border-color: #e0e0e0;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+}
+.pricing-table .enterprises {
+  margin-top: 20px;
+  width: 390px;
+  height: 607px;
+  background-color: #f7f9ff;
+  text-align: center;
+}
+.pricing-table .heading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.37em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 48px;
+  display: block;
+}
+.pricing-table .sign {
+  font-size: 17px;
+  line-height: 1.35em;
+  font-weight: 600;
+  color: #999999;
+}
+.pricing-table .price {
+  font-size: 92px;
+  line-height: 1em;
+  font-weight: 600;
+}
+.pricing-table .billed {
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.33em;
+  color: #999999;
+}
+.pricing-table button {
+  display: block;
+  margin-top: 24px;
+  margin-left: 71px;
+  height: 48px;
+  width: 249px;
+}
+.pricing-table .bold-content {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 2.3em;
+  margin-top: 32px;
+  margin-left: 79px;
+  margin-right: 79px;
+}
+.pricing-table .light-content {
+  display: block;
+  font-size: 16px;
+  line-height: 2.3em;
+  margin-left: 79px;
+  margin-right: 79px;
+}
+
+.appointment-booking {
+  width: 1920px;
+  height: 825px;
+  position: relative;
+  background: url("./../../images/booking-bg.jpg") no-repeat center center;
+  z-index: 0;
+}
+
+.appointment-booking-layer {
+  height: 825px;
+  width: 1920px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.booking-section-title {
+  position: absolute;
+  height: 116px;
+  width: 770px;
+  margin-left: 575px;
+  margin-top: 80px;
+  text-align: center;
+  color: #fff;
+}
+.booking-section-title .section-title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.25em;
+}
+.booking-section-title .section-content {
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+.calander {
+  height: 501px;
+  width: 570px;
+  margin-left: 675px;
+  margin-top: 244px;
 }
 
 .container {
@@ -361,10 +773,11 @@ body .banner, html .banner {
 
 button {
   font-size: 12px;
-  line-height: 37.5px;
   letter-spacing: 2px;
+  line-height: 3.14em;
   text-transform: uppercase;
   color: white;
+  font-weight: 600;
 }
 
 .primary-button {

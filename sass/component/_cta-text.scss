@@ -1,0 +1,27 @@
+.cta-text{
+    background-color: rgba(0, 123, 255, 1);
+    height: 172px;
+    width: 1920px;
+    color: #fff;
+    position: relative;
+    .heading{
+        position: absolute;
+        font-size: 30px;
+        line-height: 1.25em;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+    .content{
+        position: absolute;
+        font-size: 20px;
+        line-height: 1.6em;
+        margin-top: 73px;
+    }
+    button{
+        margin-top: 39px;
+        margin-left: 921px;
+        height: 48px;
+        width: 248px;
+    }
+
+}

@@ -1,0 +1,35 @@
+.video-section{
+    height: 472px;
+    width: 1920px;
+    background: url("./../../images/Background-1.png") no-repeat center center;
+    position: relative;
+    
+    .video-section-layer{
+        background-color: rgba(0, 0, 0, 0.5);  
+        height: 472px;
+        width: 1920px; 
+    }
+    .video-section-title{
+        position: absolute;
+        text-align: center;
+        margin-top: 120px;
+        width: 482px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        .video-content{
+            color: rgba(255, 255, 255, 1);
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .heading{
+            color: rgba(255, 255, 255, 1);
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+        img{
+            margin-top: 48px;
+        }
+        
+    }
+}

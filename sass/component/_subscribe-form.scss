@@ -2,8 +2,8 @@
     position: absolute;
     background-color: rgba(255,255, 255, 0.9);
     z-index: 100;
-    margin-top: 400px;
-    height: 530px;
+    margin-top: 318px;
+    height: 499px;
     width: 470px;
     
 }
@@ -11,30 +11,30 @@
     // max-width: 300px;
     // margin: 0 auto;
     // padding: 0 15px;
-    h2{
-        font-family: 'Nunito Sans', sans-serif;
-        margin-top: 50px;
+    .heading{
         margin-left: 50px;
         margin-right: 50px;
+        margin-block-start: 1.45em;
+        margin-block-end: 0em;
         font-size: 36px;
+        font-weight: 800;
         text-align: left;
-        line-height: 45px;
+        line-height: 1.25em;
     }
-    p{
-        font-family: 'Nunito Sans', sans-serif;
-        margin-top: 15px;
+    .content{
         margin-left: 50px;
         margin-right: 50px;
+        margin-block-start: 0.8em;
+        margin-block-end: 0em;
         font-size: 20px;
+        line-height: 1.6em;
         text-align: left;
-        line-height: 32px;
     }
     .inputText{
-        margin-top: 9px;
+        margin-top: 5px;
         input{
-            font-family: 'Nunito Sans', sans-serif;
-            width: 370px;
-            height: 48px;
+            width: 365px;
+            height: 44px;
             margin-top: 16px;
             margin-left: 50px;
             margin-right: 50px;
