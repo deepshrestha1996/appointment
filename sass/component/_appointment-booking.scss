@@ -1,5 +1,5 @@
 .appointment-booking{
-    width: 1920px;
+    width: 100%;
     height: 825px;
     position: relative;
     background: url('./../../images/booking-bg.jpg') no-repeat center center;
@@ -8,7 +8,7 @@
 .appointment-booking-layer{
     // position: absolute;
     height: 825px;
-    width: 1920px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 
@@ -17,8 +17,10 @@
     position: absolute;
     height: 116px;
     width: 770px;
-    margin-left: 575px;
+    
     margin-top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     color:#fff;
     .section-title{
@@ -33,8 +35,10 @@
 
 }
 .calander{
+    position: absolute;
     height: 501px;
     width: 570px;
-    margin-left: 675px;
+    left: 50%;
+    transform: translateX(-50%);
     margin-top: 244px;
 }

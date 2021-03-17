@@ -1,13 +1,13 @@
 .video-section{
     height: 472px;
-    width: 1920px;
+    width: 100%;
     background: url("./../../images/Background-1.png") no-repeat center center;
     position: relative;
     
     .video-section-layer{
         background-color: rgba(0, 0, 0, 0.5);  
         height: 472px;
-        width: 1920px; 
+        width: 100%; 
     }
     .video-section-title{
         position: absolute;

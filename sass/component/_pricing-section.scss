@@ -1,6 +1,6 @@
 .pricing-section{
     height: 971px;
-    width: 1920px;
+    width: 100%;
     position: relative;
 
     .section-title{
@@ -8,7 +8,8 @@
         height: 116px;
         width: 770px;
         margin-top: 80px;
-        margin-left: 575px;
+        margin-left: 50%;
+        transform: translateX(-50%);
         text-align: center;
         .heading{
             font-size: 36px;
@@ -33,6 +34,8 @@
     height: 647px;
     width: 1170px;
     margin-top: 244px;
+    left: 50%;
+    transform: translateX(-50%);
 
     .personal{
         width: 390px;
