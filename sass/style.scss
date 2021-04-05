@@ -21,6 +21,9 @@ body{
 }
 */
 // 
+@import "./base/all";
+@import "./base/typography";
+
 @import "./component/banner";
 @import "./component/header";
 @import "./component/subscribe-form";
@@ -36,7 +39,25 @@ body{
 @import "./component/appointment-booking";
 @import "./component/testimonials-section";
 @import "./component/portfolio-section";
+@import "./component/counter";
+@import "./component/newsletter";
+@import "./component/planning-guide";
+@import "./component/process-section";
+@import "./component/blog-post";
+@import "./component/contact";
+@import "./component/social-media";
 
 @import "./layouts/container";
+@import "./layouts/site-footer";
+@import "./layouts/img-black-layer";
+@import "./layouts/navigation";
+@import "./layouts/scroll-top";
 
 @import "./helpers/buttons";
+@import "./helpers/dropdown";
+@import "./helpers/variables";
+@import "./helpers/navbar";
+@import "./helpers/input";
+
+@import "./vendors/fonts";
+@import "./vendors/slick";

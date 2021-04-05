@@ -1,0 +1,37 @@
+.counter-section{
+    background-color: rgba(0, 123, 255, 1);
+
+}
+.counter-container{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    .counter-item{
+        width: 25%;
+        text-align: center;
+        padding: 48px 0;
+        .increment-counter{
+            font-size: 72px;
+            font-weight: 600;
+            line-height: 1em;
+        }
+        .counter-title{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.57em;
+            letter-spacing: 2px;
+        }
+    }
+    
+    
+}
+@media only screen and (max-width: 768px){
+    .counter-container{
+        display: block;
+        .counter-item{
+            width: 100%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

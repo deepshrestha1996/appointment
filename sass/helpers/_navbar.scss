@@ -1,0 +1,42 @@
+.navbar {
+    overflow: hidden;
+    color: #fff;
+    width: 100%;
+
+    h1 {
+        float: left;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.34em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .nav-content {
+        color: #fff;
+        float: left;
+        padding: 32px 0;
+        text-decoration: none;
+        padding-right: 25px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .navbar-right {
+        float: right;
+    }
+
+    .nav-btn {
+        font-size: 12px;
+        letter-spacing: 2px;
+        line-height: 3.14em;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 30px;
+        background-color: rgba(0, 123, 255, 1);
+        border: rgba(0, 123, 255, 1);
+        margin-top: 12px;
+    }
+}

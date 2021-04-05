@@ -1,0 +1,103 @@
+.process-section {
+    background-color: rgb(0, 61, 127);
+    color: #fff;
+    .process-section-main-wrapper {
+        display: flex;
+        padding-bottom: 73px;
+    }
+    .process-section-wrapper {
+        position: relative;
+        width: 25%;
+        margin-right: 30px;
+        background-color: rgb(0, 30, 63);
+        text-align: center;
+        &::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            background: url("./images/icons-svg/Arrow.svg") no-repeat;
+            width: 64px;
+            height: 48px;
+            vertical-align: top;
+            top: 50%;
+            transform: translate(-25%, -50%);
+            left: 100%;
+            z-index: 3;
+        }
+        &:last-child {
+            &::before {
+                content: "";
+                background: none;
+            }
+        }
+    }
+    .process-section-number {
+        display: block;
+        margin-top: 24px;
+        font-size: 87px;
+        font-weight: 600;
+        line-height: 1.36;
+    }
+    .process-section-process {
+        display: block;
+        margin-top: 8px;
+        color: rgb(38, 198, 68);
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 600;
+    }
+    .process-section-details {
+        display: block;
+        margin: 0 auto;
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 1.6em;
+        width: 100%;
+        max-width: 222px;
+        padding-bottom: 24px;
+    }
+}
+.process-content {
+    display: inline-block;
+    margin-top: 80px;
+    text-align: center;
+    width: 100%;
+    max-width: 532px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 48px;
+    .process-heading {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 1.25em;
+    }
+    span {
+        font-size: 20px;
+        line-height: 1.75em;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .process-section {
+        .process-section-main-wrapper {
+            display: block;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        .process-section-wrapper {
+            width: 100%;
+            &::before {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                background: url("./images/icons-svg/Arrow.svg") no-repeat;
+                width: 64px;
+                height: 48px;
+                vertical-align: top;
+                left: 45%;
+                top: 95%;
+                transform: translateX(-50%) rotateZ(90deg);
+                z-index: 3;
+            }
+        }
+    }
+}

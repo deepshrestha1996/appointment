@@ -1,16 +1,22 @@
-button{
+@use "./variables";
+
+.btn{
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 3.14em;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 30px;
+
+
 }
 .primary-button{
-    background-color: rgba(0, 123, 255);
-    border: rgba(0, 123, 255);
+    background-color: rgba(0, 123, 255, 1);
+    border: rgba(0, 123, 255, 1);
 }
 .success-button{
-    background-color: rgb(38, 198, 68);
-    border: rgb(38, 198, 68);
+    background-color: rgba(38, 198, 68, 1);
+    border: rgba(38, 198, 68, 1);
 }

@@ -1,0 +1,44 @@
+.planning-guide-section{
+    .container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 80px;
+
+        .planning-guide-wrapper{
+            flex: 1;
+            padding-bottom: 80px;
+        }
+        .planning-guide-heading{
+            font-size: 2.25rem;
+            font-weight: 800;
+            line-height: 1.2em;
+            padding-bottom: 16px;
+
+        }
+        .planning-guide-content{
+            color: rgb(0, 123, 255);
+            font-size: 16px;
+            line-height: 1.25;
+            font-weight: 600;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.6em;
+            padding-bottom: 24px;
+        }
+        .planning-guide-img{
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            min-width: 370px;
+            min-height: 234px;
+        }
+
+
+    }
+
+    
+}
+@media only screen and (max-width: 1120px){
+
+}

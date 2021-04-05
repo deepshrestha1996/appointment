@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>appointment</title>
+    <title>Appointment</title>
 
-    
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="./sass/vendors/_fonts.scss" rel="stylesheet">
 
     <!-- slick carousel -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./sass/vendors/_slick.scss" />
 
     <!-- fancybox 3-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
     <!-- fancybox 2 -->
     <!-- <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" /> -->
-    
+
 
     <!-- optionally adding helpers - buttons, thumbnail or media -->
     <!-- <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
@@ -31,238 +31,350 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="./style.css">
 
-    
-    
-    
+
+
+
 
 
 </head>
 
+
+
 <body>
-    <div class="banner">
+    <div id="scroll-btn"><img src="./images/icons-svg/Scroll-Top.svg" alt="Scroll Top"></div>
+    <div class="banner" style="background: url(./images/banner.png) no-repeat center center;">
         <div class="banner-layer">
-
-        <div class="header-t">
-            <div class="container">
-                <ul>
-                    <div class="left">
-                        <li><img src = "./images/icons-svg/call.svg" alt="callSVG" height="20px" width="26px"/><a href="">(222) 400-630</a></li>
-                    
-                        <li><img src = "./images/icons-svg/mail.svg" alt="mailSVG" height="24px" width="24px"/><a href=""> info@domain.com</a></li>
-                    </div>
-
-                    <div class="right">
-                        <li><a href=""><img src = "./images/icons-svg/facebook1.svg" alt="fbSVG" height="24px" width="24px"/></a></li>
-                        <li><a href=""><img src = "./images/icons-svg/instagram1.svg" alt="instaSVG" height="24px" width="24px"/></a></li>
-                        <li><a href=""><img src = "./images/icons-svg/linkedin1.svg" alt="linkedinSVG" height="24px" width="24px"/></a></li>
-                        <li><a href=""><img src = "./images/icons-svg/google1.svg" alt="googleSVG" height="24px" width="24px"/></a></li>
-                        <li><a href=""><img src = "./images/icons-svg/twitter1.svg" alt="twitterSVG" height="24px" width="24px"/></a></li>
-                    </div>
-                    
-                    
-                    
-                    
-                </ul>
-                
-            </div>
-        </div>
-        <div class="header-b">
-            <div class="container">
-                <ul>
-                    <div class="left">
-                        <li class="title">Appointment</li>
-
-                        
-                    </div>
-                    <div class="right">
-                        <!-- <div class="dropdown">
-                            <li><button class="dropbtn">Home</button></li>
-                            <div class="dropdown-content">
-                                <a href="#">Home 1</a>
-                                <a href="#">Home 2</a>
-                                <a href="#">Home 3</a>
+            <header>
+                <div class="header-top">
+                    <div class="container">
+                        <div class="header-left">
+                            <div class="header-block"><img src="./images/icons-svg/call.svg" alt="callSVG" /><a
+                                    href="tel:(222) 400-630">(222) 400-630</a></div>
+                            <div class="header-block"><img src="./images/icons-svg/mail.svg" alt="mailSVG" /><a
+                                    href="mailto:info@domain.com">info@domain.com</a></div>
+                        </div>
+                        <div class="header-right">
+                            <div class="header-social">
+                                <ul class="social-list">
+                                    <li><a href="#"><img src="./images/icons-svg/facebook1.svg" alt="instaSVG"
+                                                height="24px" width="24px" /></a></li>
+                                    <li><a href="#"><img src="./images/icons-svg/instagram1.svg" alt="instaSVG"
+                                                height="24px" width="24px" /></a></li>
+                                    <li><a href="#"><img src="./images/icons-svg/linkedin1.svg" alt="linkedinSVG"
+                                                height="24px" width="24px" /></a></li>
+                                    <li><a href="#"><img src="./images/icons-svg/google1.svg" alt="googleSVG"
+                                                height="24px" width="24px" /></a></li>
+                                    <li><a href="#"><img src="./images/icons-svg/twitter1.svg" alt="twitterSVG"
+                                                height="24px" width="24px" /></a></li>
+                                </ul>
 
                             </div>
-                        </div> -->
-                        <li class="navbar-content"><a href="">Home</a></li>
-
-                        <li class="navbar-content"><a href="">Services</a></li>
-                        <li class="navbar-content"><a href="">Portfolio</a></li>
-                        <li class="navbar-content"><a href="">Blog</a></li>
-                        <li class="navbar-content"><a href="">Services</a></li>
-                        <li class="navbar-content"><a href="">Contact</a></li>
-                        <li class="navbar-content"><a href=""><img src = "./images/icons-svg/search.svg" alt="searchSVG" height="18px" width="18px"/></a></li>
-                        <li><button class="primary-button">Booking</button></li>
+                        </div>
                     </div>
+                </div>
+                <div class="header-main">
+                    <div class="container">
+                        <div class="site-branding">
+                            <div class="site-logo">
+                                <h1>Appointment</h1>
+                            </div>
+                        </div>
+                        <nav id="site-navigations" class="main-navigations">
+                            <div class="primary-menu-container">
+                                <ul class="nav-container">
+                                    <li class="dropdown main-nav-list-item">
+                                        <a class="nav-content" href="#">
+                                            HOME
+                                            
+                                        </a>
+                                        <ul class="dropdown-content">
+                                            <li class="dropdown-list sub-dropdown">
+                                                <a class="dropdown-content-text" href="#">HOME 01</a>
+                                                <ul class="sub-dropdown-content">
+                                                    <li><a class="sub-dropdown-text" href="#">HOME 01 SUB MENU</a></li>
+                                                    <li><a class="sub-dropdown-text" href="#">HOME 01 SUB MENU</a></li>
+                                                    <li><a class="sub-dropdown-text" href="#">HOME 01 SUB MENU</a></li>
+                                                    <li><a class="sub-dropdown-text" href="#">HOME 01 SUB MENU</a></li>
+                                                    <li><a class="sub-dropdown-text" href="#">HOME 01 SUB MENU</a></li>
+                                                </ul>
 
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-content-text" href="#">HOME 02</a>
+                            
 
+                                            </li>
+                                            <li class="dropdown-list">
+                                                <a class="dropdown-content-text" href="#">HOME 03</a>
+                                                
 
-                </ul>
-                
-            </div>
+                                            </li>
+                                            <li class="dropdown-list sub-dropdown">
+                                                <a class="dropdown-content-text" href="#">HOME 04</a>
 
+                                            </li>
+                                        </ul>
+                                        
+                                    </li>
+
+                                    <li class="main-nav-list-item"><a class="nav-content" href="#">SERVICES</a></li>
+                                    <li class="main-nav-list-item"><a class="nav-content" href="#">PORTFOLIO</a></li>
+                                    <li class="main-nav-list-item"><a class="nav-content" href="#">BLOG</a></li>
+                                    <li class="main-nav-list-item"><a class="nav-content" href="#">SHOP</a></li>
+                                    <li class="main-nav-list-item"><a class="nav-content" href="#">CONTACT</a></li>
+                                </ul>
+                            </div>
+                            <div class="search">
+                                <a href="#" class="nav-content"><img src="./images/icons-svg/search.svg" alt="searchSVG"
+                                        height="18px" width="18px" /></a>
+                            </div>
+                            <div class="booking-button">
+                                <a href="#" class="nav-content nav-btn btn primary-button">BOOKING</a>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </header>
         </div>
-    </div>
         <div class="container">
 
- 
-                <div class="subscribe-form">
-                    <div class="subscribe-form-container">
-                        <p class="heading">Ready to escape your corporate job?</p>
-                        <p class="content">Join me to learn how to unlock your inner greatness and build a profitable business you love!</p>
+
+            <div class="subscribe-form">
+                <div class="subscribe-form-container">
+                    <div class="heading">Ready to escape your corporate job?</div>
+                    <div class="content">Join me to learn how to unlock your inner greatness and build a profitable
+                        business you love!</div>
+                    <form action="" method="POST">
                         <div class="inputText">
-                            <input type="text" placeholder="First Name">                      
-                            <input type="email" placeholder="Your Email Address">
+                            <input type="text" id="firstname" placeholder="First Name">
+                            <input type="email" id="email" placeholder="Your Email Address">
 
                         </div>
-                        <button class="primary-button">sign up for newsletter</button>
+                        <a href="" class="btn primary-button">SIGN UP FOR NEWSLETTER</a>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="service-1-wrapper">
+        <div class="container">
+            <div class="service-1-container">
+                <div class="service-1-box-item">
+                    <div class="service-1-icon">
+                        <img src="./images/icons-svg/twotone-important_devices-24px.svg" alt="">
+                    </div>
+                    <div class="service-1-desc">
+                        <div class="service-1-title">Business Consulting</div>
+                        <div class="service-1-para">It’s complicated. I’ve spent more than 20 years recommending various
+                            anti-virus programs as an essential part of any Windows setup.</div>
+                    </div>
+
+                </div>
+                <div class="service-1-box-item">
+                    <div class="service-1-icon">
+                        <img src="./images/icons-svg/twotone-developer_board-24px.svg" alt="">
+                    </div>
+                    <div class="service-1-desc">
+                        <div class="service-1-title">Business Risk Services</div>
+                        <div class="service-1-para">It’s complicated. I’ve spent more than 20 years recommending various
+                            anti-virus programs as an essential part of any Windows setup.</div>
 
                     </div>
-                    
+
                 </div>
-    
+                <div class="service-1-box-item">
+                    <div class="service-1-icon">
+                        <img src="./images/icons-svg/twotone-settings-24px.svg" alt="">
+                    </div>
+                    <div class="service-1-desc">
+                        <div class="service-1-title">Corporate Simplification</div>
+                        <div class="service-1-para">It’s complicated. I’ve spent more than 20 years recommending various
+                            anti-virus programs as an essential part of any Windows setup.</div>
+                    </div>
 
-        </div>
+                </div>
 
-
-        
-    </div>
-
-    <div class="container">
-
-        <div class="service-section-1-container">
-            <div class="service-section-1-item">
-                <a class="heading">Business Consulting</a>
-                <a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-                <img src="./images/icons-svg/twotone-important_devices-24px.svg" alt="">
-            </div>
-            <div class="service-section-1-item">
-                <a class="heading">Business Risk Services</a>
-                <a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-                <img src="./images/icons-svg/twotone-developer_board-24px.svg" alt="">
-            </div>
-            <div class="service-section-1-item">
-                <a class="heading">Corporate Simplification</a>
-                <a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-                <img src="./images/icons-svg/twotone-settings-24px.svg" alt="">
             </div>
         </div>
 
+    </div>
+
+
+    <div class="intro-section">
+
+        <div class="container">
+            <div class="intro-section-holder">
+                <div class="text-img-holder">
+                    <div class="img-holder">
+                        <a href="#">
+                            <img src="./images/Author-Image.png" alt="Hi i am Samantha">
+                        </a>
+                    </div>
+                    <div class="text-holder">
+                        <div class="content-wrapper">
+                            <h2 class="section-title">Hi! I'm Samantha Walters</h2>
+                            <div class="section-content">
+                                <p>Hi, my name is Sirapa, nice to meet you!</p>
+
+                                <p>I work with motivated spirits just like yours that want to quit their 9 to 5 jobs and
+                                    embrace
+                                    the
+                                    entrepreneurial adventure.</p>
+
+                                <p>Do you have a business or an idea you are passionate about but you don’t have the
+                                    knowledge
+                                    or time to
+                                    create the web material and strategy you need?</p>
+
+                                <p class="end">No worries! I have created a group of like-minded people to help you grow
+                                    your
+                                    business online.
+                                    Everything is about you and what you want to do, I am only here to guide you and
+                                    support you
+                                    to make you
+                                    realise your dreams!</p>
+                                <a href="" class="btn primary-button">MORE ABOUT ME</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
 
     </div>
 
-    <div class="container">
-        <div class="intro-section">
-            <img src="./images/Author-Image.png" alt="">
-            
-        </div>
-        <div class="author-intro">
-            <h3>Hi! I'm Samantha Walters</h3>
-
-            <p>Hi, my name is Sirapa, nice to meet you!</p>
-
-            <p>I work with motivated spirits just like yours that want to quit their 9 to 5 jobs and embrace the entrepreneurial adventure.</p>
-             
-            <p>Do you have a business or an idea you are passionate about but you don’t have the knowledge or time to create the web material and strategy you need?</p>
-
-            <p>No worries! I have created a group of like-minded people to help you grow your business online. Everything is about you and what you want to do, I am only here to guide you and support you to make you realise your dreams!</p>
-
-
-            <button class="primary-button">more about me</button>
-
-        </div>
-        
-
-
-    </div>
-    <div class="call-to-action">
+    <div class="call-to-action"
+        style="background: url(./images/background.png) no-repeat center center; vertical-align: top;">
         <div class="layer">
-            <div class="content">
-                <h2>Easy & Simple - No Coding</h2>
-                <p>It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</p>
+            <div class="call-to-action-content">
+                <div class="call-to-action-heading">Easy & Simple - No Coding</div>
+                <div class="call-to-action-desc">It’s complicated. I’ve spent more than 20 years recommending various anti-virus
+                    programs as an
+                    essential part of any Windows setup.</div>
 
-                <button class="primary-button">purchase</button>
-                <button class="success-button">learn more</button>
+                <a href="#" class="btn primary-button">PURCHASE</a>
+                <a href="#" class="btn success-button">LEARN MORE</a>
             </div>
         </div>
 
     </div>
     <div class="service-section-2">
         <div class="section-title">
-            <a class="heading">Services We Offer</a><br>
-            <a class="content">Our commitment is to provide comprehensive quality care</a>
+            <div class="heading">Services We Offer</div>
+            <div class="content">Our commitment is to provide comprehensive quality care</div>
         </div>
 
         <div class="container">
             <div class="team-box-container service-section-carousel">
                 <div class="team-box-item">
                     <img class="image" src="./images/services-1.png" alt="">
-                    <a class="heading">Business Planning & Strategy</a><br>
-                    <a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-                    <br><a href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg" alt=""></a>
+                    <div class="heading">Business Planning & Strategy</div>
+                    <div class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus
+                        programs as an essential part of any Windows setup.</div>
+                    <div href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg"
+                            alt=""></div>
                 </div>
                 <div class="team-box-item">
                     <img class="image" src="./images/services-2.png" alt="">
-                    <a class="heading">Financial Projections and Analysis</a><br>
+                    <div class="heading">Financial Projections and Analysis</div>
 
-                    <a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-                    <br><a href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg" alt=""></a>
+                    <div class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus
+                        programs as an essential part of any Windows setup.</div>
+                    <div href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg"
+                            alt=""></div>
 
                 </div>
                 <div class="team-box-item">
                     <img class="image" src="./images/services-3.png" alt="">
-                    <a class="heading">Strategic Planning</a><br>
-                    <a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-                    <br><a href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg" alt=""></a>
+                    <div class="heading">Strategic Planning</div>
+                    <div class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus
+                        programs as an essential part of any Windows setup.</div>
+                    <div href="" class="learn-more">Learn More<img class="icon" src="./images/icons-svg/arrow-sign.svg"
+                            alt=""></div>
                 </div>
             </div>
 
 
         </div>
-        
-      
 
-    
+
+
+
 
 
 
     </div>
 
     <div class="featured-on-section">
-        <a>as featured in</a>
-        <div class="container featured-on-section-container featured-on-section-carousel">
 
-            <div class="box-item box-item-1">
-                <img src="./images/icons-svg/algolia.svg" alt="">
-            </div>
-            <div class="box-item box-item-2">
-                <img src="./images/icons-svg/android.svg" alt="">
-            </div>
-            <div class="box-item box-item-3">
-                <img src="./images/icons-svg/codeclimate.svg" alt="">
-            </div>
-            <div class="box-item box-item-4">
-                <img src="./images/icons-svg/akamai.svg" alt="">
-            </div>
-            <div class="box-item box-item-5">
-                <img src="./images/icons-svg/aws.svg" alt="">
-            </div>
-            <div class="box-item box-item-6">
-                <img src="./images/icons-svg/behance.svg" alt="">
-            </div>
-    
+        <div class="featured-heading">AS FEATURED IN</div>
+        <div class="carousel-wrapper">
+            <div class="container featured-on-section-container featured-on-section-carousel">
 
+                <div class="box-item box-item-1">
+                    <img src="./images/icons-svg/algolia.svg" alt="">
+                </div>
+                <div class="box-item box-item-2">
+                    <img src="./images/icons-svg/android.svg" alt="">
+                </div>
+                <div class="box-item box-item-3">
+                    <img src="./images/icons-svg/codeclimate.svg" alt="">
+                </div>
+                <div class="box-item box-item-4">
+                    <img src="./images/icons-svg/akamai.svg" alt="">
+                </div>
+                <div class="box-item box-item-5">
+                    <img src="./images/icons-svg/aws.svg" alt="">
+                </div>
+                <div class="box-item box-item-6">
+                    <img src="./images/icons-svg/behance.svg" alt="">
+                </div>
+                <div class="box-item box-item-1">
+                    <img src="./images/icons-svg/algolia.svg" alt="">
+                </div>
+                <div class="box-item box-item-2">
+                    <img src="./images/icons-svg/android.svg" alt="">
+                </div>
+                <div class="box-item box-item-3">
+                    <img src="./images/icons-svg/codeclimate.svg" alt="">
+                </div>
+                <div class="box-item box-item-4">
+                    <img src="./images/icons-svg/akamai.svg" alt="">
+                </div>
+                <div class="box-item box-item-5">
+                    <img src="./images/icons-svg/aws.svg" alt="">
+                </div>
+                <div class="box-item box-item-6">
+                    <img src="./images/icons-svg/behance.svg" alt="">
+                </div>
+
+
+            </div>
         </div>
-        
-        
+
+
+
     </div>
-    <div class="video-section">
+    <div class="video-section" style="background: url(./images/Background-1.png) no-repeat center center;">
         <div class="video-section-layer">
             <div class="video-section-title">
-                <a class="heading">Booking & Scheduling Video</a><br>
-                <a class="video-content">Take a tour & see the features</a>
-                <br>
-                <a data-fancybox= "gallery" href="./images/banner.png"><img src="./images/icons-svg/play.svg" alt=""></a> 
+                <div class="heading">Booking & Scheduling Video</div>
+                <div class="video-content">Take a tour & see the features</div>
+
+                <div data-fancybox="gallery" href="./images/banner.png"><img src="./images/icons-svg/play.svg" alt="">
+                </div>
 
             </div>
 
@@ -273,8 +385,9 @@
 
     <div class="our-team-section">
         <div class="our-team-section-title">
-            <a class="heading">Our Team</a>
-            <br><a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
+            <div class="heading">Our Team</div>
+            <div class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus
+                programs as an essential part of any Windows setup.</div>
 
         </div>
 
@@ -284,144 +397,773 @@
 
                 <div class="team-box-item">
                     <img class="image" src="./images/eula.png" alt="">
-                    <a class="name">Eulalia Daugherty</a>
-                    <br><a class="position">Partner & CFO</a>
-                    <br><a class="desc">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-    
+                    <div class="name">Eulalia Daugherty</div>
+                    <div class="position">Partner & CFO</div>
+                    <div class="desc">It’s complicated. I’ve spent more than 20 years recommending various anti-virus
+                        programs as an essential part of any Windows setup.</div>
+
                 </div>
                 <div class="team-box-item">
                     <img class="image" src="./images/katlyn.png" alt="">
-                    <a class="name">Katlynn Pouros</a>
-                    <br><a class="position">Partner & CFO</a>
-                    <br><a class="desc">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-    
+                    <div class="name">Katlynn Pouros</div>
+                    <div class="position">Partner & CFO</div>
+                    <div class="desc">It’s complicated. I’ve spent more than 20 years recommending various anti-virus
+                        programs as an essential part of any Windows setup.</div>
+
                 </div>
                 <div class="team-box-item">
                     <img class="image" src="./images/michael.png" alt="">
-                    <a class="name">Michael Armstrong</a>
-                    <br><a class="position">Partner & CFO</a>
-                    <br><a class="desc">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-    
+                    <div class="name">Michael Armstrong</div>
+                    <div class="position">Partner & CFO</div>
+                    <div class="desc">It’s complicated. I’ve spent more than 20 years recommending various anti-virus
+                        programs as an essential part of any Windows setup.</div>
+
                 </div>
-    
+
             </div>
 
         </div>
-        
+
     </div>
 
-    <div class="cta-text">
-        <div class="container">
-            <a class="heading">Book your visit online and save up to -30%</a>
-            <br><a class="content">First 100 booking will be awarded with free consultation.</a>
-            <button class="success-button">make an appointment</button>
+    <div class="cta-text-section">
+        <div class="container cta-text-container">
+            <div class="cta-text-box-item-a">
+                <div class="heading">Book your visit online and save up to -30%</div>
+                <div class="content">First 100 booking will be awarded with free consultation.</div>
+
+            </div>
+            <div class="cta-text-box-item-b">
+                <a href="#" class="btn success-button">MAKE AN APPOINTMENT</a>
+            </div>
+
         </div>
 
     </div>
+
     <div class="pricing-section">
-        <div class="section-title">
+        <div class="pricing-section-title">
 
-            <a class="heading">Pricing Table</a>
-            <br><a class="content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
-    
+            <div class="pricing-heading">Pricing Table</div>
+            <div class="pricing-content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus
+                programs as an essential part of any Windows setup.</div>
+
 
         </div>
         <div class="container">
-            <div class="pricing-table">
-                <div class="personal">
-                    <span class="heading">personal</span>
-                    <span class="sign">$</span>
-                    <span class="price">0</span>
-                    <span class="billed">billed per month</span>
-                    <button class="primary-button">make an appointment</button>
-                    <hr class="pricing-hr">
-                    <span class="bold-content">Limited Access With 1 Logins 50 Form Submissions 200 Bonus Points For members
-                        </span>
-                    <span class="light-content">Shared Domain 2 GB Cloud Storage Access Limited Support / 20 Chats</span>
-
-
+            <div class="table-wrapper">
+                <div class="pricing-items">
+                    <div class="top">
+                        <span class="category">PERSONAL</span>
+                        <div class="pricing">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                        </div>
+                        <div class="billed-per-mth">BILLED PER MONTH</div>
+                        <a href="#" class="btn primary-button">MAKE AN APPOINTMENT</a>
+    
+                    </div>
+                    <ul class="pricing-list">
+                        <li class="pricing-bold">Limited Access With 1 Logins</li>
+                        <li class="pricing-bold">50 Form Submissions</li>
+                        <li class="pricing-bold">200 Bonus Points For members</li>
+                        <li>Shared Domain</li>
+                        <li>2 GB Cloud Storage Access</li>
+                        <li>Limited Support / 20 Chats</li>
+                    </ul>
                 </div>
-                <div class="business">
-                        <span class="heading">business</span>
-                    <span class="sign">$</span>
-                    <span class="price">89</span>
-                    <span class="billed">billed per month</span>
-                    <button class="primary-button">make an appointment</button>
-                    <hr class="pricing-hr">
-                    <span class="bold-content">Limited Access With 1 Logins 50 Form Submissions 200 Bonus Points For members
-                        </span>
-                    <span class="light-content">Shared Domain 2 GB Cloud Storage Access Limited Support / 20 Chats</span>
-
-                    
-
+                <div class="pricing-items">
+                    <div class="top">
+                        <span class="category">BUSINESS</span>
+                        <div class="pricing">
+                            <span class="currency">$</span>
+                            <span class="amount">89</span>
+                        </div>
+                        <div class="billed-per-mth">BILLED PER MONTH</div>
+                        <a href="#" class="btn success-button">MAKE AN APPOINTMENT</a>
+    
+                    </div>
+                    <ul class="pricing-list">
+                        <li class="pricing-bold">Limited Access With 10 Logins</li>
+                        <li class="pricing-bold">500 Form Submissions</li>
+                        <li class="pricing-bold">500 Bonus Points For members</li>
+                        <li>Shared Domain</li>
+                        <li>50 GB Cloud Storage Access</li>
+                        <li>Unlimited Support / 2000 Chats</li>
+                    </ul>
                 </div>
-                <div class="enterprises">
-                    <span class="heading">enterprises</span>
-                    <span class="sign">$</span>
-                    <span class="price">299</span>
-                    <span class="billed">billed per month</span>
-                    <button class="primary-button">make an appointment</button>
-                    <hr class="pricing-hr">
-                    <span class="bold-content">Limited Access With 1 Logins 50 Form Submissions 200 Bonus Points For members
-                        </span>
-                    <span class="light-content">Shared Domain 2 GB Cloud Storage Access Limited Support / 20 Chats</span>
-
-
+                <div class="pricing-items">
+                    <div class="top">
+                        <span class="category">ENTERPRISE</span>
+                        <div class="pricing">
+                            <span class="currency">$</span>
+                            <span class="amount">299</span>
+                        </div>
+                        <div class="billed-per-mth">BILLED PER MONTH</div>
+                        <a href="#" class="btn primary-button">MAKE AN APPOINTMENT</a>
+    
+                    </div>
+                    <ul class="pricing-list">
+                        <li class="pricing-bold">Limited Access With 100 Logins</li>
+                        <li class="pricing-bold">Unlimited Form Submissions</li>
+                        <li class="pricing-bold">2000 Bonus Points For members</li>
+                        <li>Shared Domain</li>
+                        <li>500 GB Cloud Storage Access</li>
+                        <li>Unlimited Support / Chats</li>
+                    </ul>
                 </div>
-
-
             </div>
-
         </div>
-        
+
     </div>
 
-    <div class="appointment-booking">
+    <div class="appointment-booking" style="background: url(images/booking-bg.jpg) no-repeat center center;">
 
         <div class="appointment-booking-layer">
-            <div class="booking-section-title">
-                <a class="section-title">Book a Business Choaching Appointment</a>
-                <br><a class="section-content">It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an essential part of any Windows setup.</a>
+            <div class="container">
+                <div class="booking-section-title">
+                    <div class="section-title">Book a Business Choaching Appointment</div>
+                    <div class="section-content">It’s complicated. I’ve spent more than 20 years recommending various
+                        anti-virus programs as an essential part of any Windows setup.</div>
+
+                </div>
+                <img src="./images/Calender.png" alt="" class="calander">
 
             </div>
-            <img src="./images/Calender.png" alt="" class="calander">
+
 
         </div>
 
 
     </div>
     <div class="testimonials">
+        <div class="container">
+            <div class="testimonial-title">WHAT ARE THEY SAYING</div>
+            <div class="testimonial-inner-wrapper">
+                <div class="quotes-carousel">
 
-        
+                    <div class="quotes-carousel-content">
+                        <div class="quotes">"It was really fun getting to know the team during the project. They were
+                            all helpful in answering my questions and made me feel at ease. The design ended up being
+                            better than I could have envisioned!"</div>
+                        <img src="./images/Author-Thumb.png" alt="circle-img">
+                        <div class="author">Sudina Manandhar</div>
+                        <div class="author-position">Design Lead, Mircosoft</div>
+
+                    </div>
+                    <div class="quotes-carousel-content">
+                        <div class="quotes">"It was really fun getting to know the team during the project. They were
+                            all helpful in answering my questions and made me feel at ease. The design ended up being
+                            better than I could have envisioned!"</div>
+                        <img src="./images/Author-Thumb.png" alt="circle-img">
+                        <div class="author">Sudina Manandhar</div>
+                        <div class="author-position">Design Lead, Mircosoft</div>
+
+                    </div>
+                    <div class="quotes-carousel-content">
+                        <div class="quotes">"It was really fun getting to know the team during the project. They were
+                            all helpful in answering my questions and made me feel at ease. The design ended up being
+                            better than I could have envisioned!"</div>
+                        <img src="./images/Author-Thumb.png" alt="circle-img">
+                        <div class="author">Sudina Manandhar</div>
+                        <div class="author-position">Design Lead, Mircosoft</div>
+
+                    </div>
+                    <div class="quotes-carousel-content">
+                        <div class="quotes">"It was really fun getting to know the team during the project. They were
+                            all helpful in answering my questions and made me feel at ease. The design ended up being
+                            better than I could have envisioned!"</div>
+                        <img src="./images/Author-Thumb.png" alt="circle-img">
+                        <div class="author">Sudina Manandhar</div>
+                        <div class="author-position">Design Lead, Mircosoft</div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
     </div>
 
-    <div class="portfolio">
+
+    <div class="counter-section">
+        <div class="container">
+            <div class="counter-inner-wrapper">
+                <div class="counter-container">
+                    <div class="counter-item">
+                        <div class="increment-counter" data-count="25">
+
+                        </div>
+                        <div class="counter-title">
+                            YEARS EXPERIENCE
+                        </div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="increment-counter" data-count="1023">
+
+                        </div>
+                        <div class="counter-title">
+                            PEOPLE ACCROSS
+                        </div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="increment-counter" data-count="15">
+
+                        </div>
+                        <div class="counter-title">
+                            BOOKS WRITTEN
+                        </div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="increment-counter" data-count="872">
+
+                        </div>
+                        <div class="counter-title">
+                            ARTICLES POSTED
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="portfolio-section">
+        <div class="container">
             <div class="portfolio-section-title">
-                <a class="heading">Our Case Studies</a>
-                <br><a class="content">We solve business problems with creative solutions.</a>
+                <div class="portfolio-heading">Our Case Studies</div>
+                <div class="portfolio-content">We solve business problems with creative solutions.</div>
             </div>
             <div class="portfolio-navbar">
-                <ul>
-                    <li>show all</li>
-                    <li>advisory</li>
-                    <li>analytics</li>
-                    <li>financial services</li>
-                    <li>business plannings</li>
-                    <li>real state</li>
+                <ul class="portfolio-navbar-container">
+                    <li class="portfolio-navbar-active" data-filter="*"><a>show all</a></li>
+                    <li data-filter=".advisory"><a>advisory</a></li>
+                    <li data-filter=".analytics"><a>analytics</a></li>
+                    <li data-filter=".financialservices"><a>financial services</a></li>
+                    <li data-filter=".businessplanning"><a>business planning</a></li>
+                    <li data-filter=".realestate"><a>real estate</a></li>
                 </ul>
 
             </div>
 
 
+            <div class="portfolio-container">
+                <div class="portfolio-box-item-wrapper advisory">
+                    <div class="inner-wrapper-box-item">
+                        <div data-fancybox="gallery" href="./images/portfolio-section/image-1.png"
+                            class="inner-fancybox" title="Wealth Advisory"
+                            data-caption="this is a wealth advisory section">
+                            <img class="portfolio-image" src="./images/portfolio-section/image-1.png" alt="">
+                            <div class="portfolio-title">Wealth Advisory</div>
+                            <div class="portfolio-item">Advisory</div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="portfolio-box-item-wrapper advisory financialservices analytics">
+                    <div class="inner-wrapper-box-item">
+                        <div data-fancybox="gallery" href="./images/portfolio-section/image-2.png">
+
+                            <img class="portfolio-image" src="./images/portfolio-section/image-2.png" alt="">
+                            <div class="portfolio-title">Specialist International Services</div>
+                            <div class="portfolio-item">Analytics</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="portfolio-box-item-wrapper  analytics realestate">
+                    <div class="inner-wrapper-box-item">
+                        <div data-fancybox="gallery" href="./images/portfolio-section/image-3.png">
+                            <img class="portfolio-image" src="./images/portfolio-section/image-3.png" alt="">
+                            <div class="portfolio-title">Recovery and Reorganization</div>
+                            <div class="portfolio-item">Financial Services</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="portfolio-box-item-wrapper financialservices analytics businessplanning">
+                    <div class="inner-wrapper-box-item">
+                        <div data-fancybox="gallery" href="./images/portfolio-section/image-4.png">
+                            <img class="portfolio-image" src="./images/portfolio-section/image-4.png" alt="">
+                            <div class="portfolio-title">Pension Advisory Services</div>
+                            <div class="portfolio-item">Advisory</div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+                <div class="portfolio-box-item-wrapper realestate financialservices businessplanning">
+                    <div class="inner-wrapper-box-item">
+                        <div data-fancybox="gallery" href="./images/portfolio-section/image-5.png">
+                            <img class="portfolio-image" src="./images/portfolio-section/image-5.png" alt="">
+                            <div class="portfolio-title">Real Estate Advisory</div>
+                            <div class="portfolio-item">Real Estate</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="portfolio-box-item-wrapper advisory realestate">
+                    <div class="inner-wrapper-box-item">
+                        <div data-fancybox="gallery" href="./images/portfolio-section/image-6.png">
+                            <img class="portfolio-image" src="./images/portfolio-section/image-6.png" alt="">
+                            <div class="portfolio-title">Monitoring Trusting Services</div>
+                            <div class="portfolio-item">Advisory</div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="portfolio-box-item-wrapper  analytics advisory">
+                    <div class="inner-wrapper-box-item">
+                        <div data-fancybox="gallery" href="./images/portfolio-section/image-7.png">
+                            <img class="portfolio-image" src="./images/portfolio-section/image-7.png" alt="">
+                            <div class="portfolio-title">Public Sector Services</div>
+                            <div class="portfolio-item">Analytics</div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="portfolio-box-item-wrapper  financialservices realestate">
+                    <div class="inner-wrapper-box-item">
+                        <div data-fancybox="gallery" href="./images/portfolio-section/image-8.png">
+                            <img class="portfolio-image" src="./images/portfolio-section/image-8.png" alt="">
+                            <div class="portfolio-title">Insights and Analytics</div>
+                            <div class="portfolio-item">Business Planning</div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="portfolio-box-item-wrapper businessplanning analytics">
+                    <div class="inner-wrapper-box-item">
+                        <div data-fancybox="gallery" href="./images/portfolio-section/image-9.png">
+                            <img class="portfolio-image" src="./images/portfolio-section/image-9.png" alt="">
+                            <div class="portfolio-title">Forensics and Investication Services</div>
+                            <div class="portfolio-item">Financial Services</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
     </div>
+    <div class="newsletter-section" style="background: url(./images/newsletter.png) no-repeat center center ;">
+        <div class="black-layer">
+            <div class="container">
+                <div class="newsletter-content-container">
+                    <div class="newsletter-heading">
+                        Ready to escape your corporate job?
+                    </div>
+                    <div class="newsletter-content">
+                        Join me to learn how to unlock your inner greatness and build a profitable business you love!
+                    </div>
+                    <form class="newsletter-form" action="" method="POST">
+                        <input type="text" placeholder="Your First Name...">
+                        <input type="email" placeholder="Your Email Address...">
+                        <a href="" class="btn primary-button">SIGN UP</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="planning-guide-section">
+        <div class="container">
+            <div class="planning-guide-wrapper">
+                <div class="planning-guide-heading">
+                    A Truly Life Changing Success Story
+                </div>
+                <div class="planning-guide-content">Story About Rosie Harrison</div>
+                <p>Do you have a business or an idea you are passionate about but you don’t have the knowledge or time
+                    to create the web material and strategy you need?</p>
+                <p>No worries! I have created a group of like-minded people to help you grow your business online.
+                    Everything is about you and what you want to do, I am only here to guide you and support you to make
+                    you realise your dreams!</p>
+                <a href="" class="btn primary-button">READ MORE STORIES</a>
+            </div>
+            <div class="planning-guide-wrapper">
+                <div data-fancybox="gallery" href="./images/Video.png">
+                    <img class="planning-guide-img" src="./images/Video.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="process-section">
+        <div class="process-content">
+            <div class="process-heading">
+                Do You Want a Successful Life?
+            </div>
+            <div>
+                Four steps to your success
+            </div>
+        </div>
+        <div class="container">
+            <div class="process-section-main-wrapper">
+                <div class="process-section-wrapper">
+                    <div class="process-section-number"> 01</div>
+                    <div class="process-section-process">CONTACT</div>
+                    <div class="process-section-details">Our group will help you give life to your projects and promote
+                        your
+                        products or
+                        services.</div>
+                </div>
+                <div class="process-section-wrapper">
+                    <div class="process-section-number">02</div>
+                    <div class="process-section-process">APOINTMENT</div>
+                    <div class="process-section-details">Our group will help you give life to your projects and promote
+                        your
+                        products or
+                        services.</div>
+                </div>
+                <div class="process-section-wrapper">
+                    <div class="process-section-number">03</div>
+                    <div class="process-section-process">ANALYSYS</div>
+                    <div class="process-section-details">Our group will help you give life to your projects and promote
+                        your
+                        products or
+                        services.</div>
+                </div>
+                <div class="process-section-wrapper">
+                    <div class="process-section-number">04</div>
+                    <div class="process-section-process">SUCCESS</div>
+                    <div class="process-section-details">Our group will help you give life to your projects and promote
+                        your
+                        products or
+                        services.</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="blog-post-section">
+        <div class="container">
+            <div class="blog-post-title">
+                <div class="blog-post-heading">
+                    Latest News & Articles
+                </div>
+                <div class="blog-post-content">
+                    It’s complicated. I’ve spent more than 20 years recommending various anti-virus programs as an
+                    essential part of any Windows setup.
+                </div>
+
+            </div>
+            <div class="blog-post-wrapper">
+                <div class="blog-post-container blog-post-carousel">
+                    <div class="blog-post-boxitems">
+                        <img src="./images/blog-post-1.png" alt="blog_post">
+                        <div class="blog-post-category">
+                            BUSINESS
+                        </div>
+                        <div class="blog-heading">
+                            22 Success Tips for Women Filmmakers in a Male-Dominated Industry
+                        </div>
+                        <div class="blog-post-date">
+                            23.05.2018
+                        </div>
+                    </div>
+                    <div class="blog-post-boxitems">
+                        <img src="./images/blig-post-2.png" alt="blog_post">
+                        <div class="blog-post-category">
+                            ENTERPRENUR
+                        </div>
+                        <div class="blog-heading">
+                            Risky Business: A BDO Expert on Small Business Risks
+                        </div>
+                        <div class="blog-post-date">
+                            23.05.2018
+                        </div>
+                    </div>
+                    <div class="blog-post-boxitems">
+                        <img src="./images/blog-post-3.png" alt="blog_post">
+                        <div class="blog-post-category">
+                            BUSINESS
+                        </div>
+                        <div class="blog-heading">
+                            3 Tips For Starting Out In The Experiential Events Space in India
+                        </div>
+                        <div class="blog-post-date">
+                            23.05.2018
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="contact-section">
+        <div class="contact-parallax" data-parallax="scroll" data-image-src="./images/contact.png">
+            <div class="black-layer">
+                <div class="container">
+                    <div class="contact-title">
+                        <div class="contact-section-heading">
+                            Let's Talk
+                        </div>
+                        <div class="contact-section-desc">
+                            Tell me your story or just say Hello!
+                        </div>
+                    </div>
+                    <form class="form-wrapper" method="POST" action="">
+                        <div class="form-boxitem">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Phone">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-boxitem">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn primary-button">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                    <div class="contact-details">
+                        <div class="contact-details-boxitems">
+                            <div class="call-wrapper">
+                                <a href="tel:(222) 400-630">
+                                    <img src="./images/icons-svg/call-big.svg" alt="call-svg">
+                                    <div class="contact-details-text">
+                                        Call Me
+                                    </div>
+                                    <div class="contact-details-info">
+                                        (222) 400-630
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-details-boxitems">
+                            <div class="email-wrapper">
+                                <a href="mailto:info@domain.com">
+                                    <img src="./images/icons-svg/mail-big.svg" alt="">
+                                    <div class="contact-details-text">
+                                        Email
+                                    </div>
+                                    <div class="contact-details-info">
+                                        info@domain.com
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="contact-details-boxitems">
+                            <div class="visit-us-wrapper">
+                                <a href="">
+                                    <img src="./images/icons-svg/ballon.svg" alt="">
+                                    <div class="contact-details-text">
+                                        Visit Me
+                                    </div>
+                                    <div class="contact-details-info">
+                                        Street Name, np. 14,
+                                        London, U.K, E14 2RF
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="social-media-section">
+        <div class="container">
+            <div class="title-wrapper">
+                <div class="social-title">
+                    GET CONNECTED
+                </div>
+
+            </div>
+            <div class="social-share-wrapper">
+                <div class="social-share">
+                    <div class="social-share-boxitems">
+                        <a href="#" class="social-media">
+                            <div class="social-image">
+                                <img src="./images/icons-svg/facebook1.svg" alt="instaSVG" />
+                            </div>
+
+                            <div class="social-media-title">Facebook</div>
+                        </a>
+
+                    </div>
+                    <div class="social-share-boxitems">
+                        <a href="#" class="social-media">
+                            <div class="social-image">
+                                <img src="./images/icons-svg/twitter1.svg" alt="instaSVG" />
+                            </div>
+
+                            <div class="social-media-title">Twitter</div>
+                        </a>
+
+                    </div>
+                    <div class="social-share-boxitems">
+                        <a href="#" class="social-media">
+                            <div class="social-image">
+                                <img src="./images/icons-svg/linkedin1.svg" alt="instaSVG" />
+                            </div>
+
+                            <div class="social-media-title">LinkedIn</div>
+                        </a>
+
+                    </div>
+                    <div class="social-share-boxitems">
+                        <a href="#" class="social-media">
+                            <div class="social-image">
+                                <img src="./images/icons-svg/google1.svg" alt="instaSVG" />
+                            </div>
+
+                            <div class="social-media-title">Google+</div>
+                        </a>
+                    </div>
+                    <div class="social-share-boxitems">
+                        <a href="#" class="social-media">
+                            <div class="social-image">
+                                <img src="./images/icons-svg/instagram1.svg" alt="instaSVG" />
+                            </div>
+
+                            <div class="social-media-title">Instagram</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="site-footer">
+
+        <div class="widget">
+            <div class="container">
+                <div class="widget-inner-flex about-us">
+                    <span class="inner-flex-heading">
+                        ABOUT US
+                    </span>
+                    <div class="content-abt-us">
+                        Appointment is your simple, powerful, and elegant small business solution. With the Booked
+                        calendar, our beautiful portfolio design, and a wide range of features, this is the perfect
+                        theme to take your small business to new heights.
+                    </div>
+                </div>
+                <div class="widget-inner-flex recent-post">
+                    <span class="inner-flex-heading">
+                        RECENT POST
+                    </span>
+                    <div class="content-recent-post">
+                        <div class="posts">
+                            <div class="post-heading">
+                                22 Success Tips for Women Filmmakers in a Male-Dominated Industry
+                            </div>
+                            <div class="post-date">
+                                23.05.2018
+                            </div>
+                        </div>
+                        <div class="posts">
+                            <div class="post-heading">
+                                Risky Business: A BDO Expert on Small Business Risks
+                            </div>
+                            <div class="post-date">
+                                23.05.2018
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="widget-inner-flex quick-links">
+                    <div class="inner-flex-heading">
+                        QUICK LINKS
+                    </div>
+                    <div class="inner-flex-quick-link">
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>Shipping</li>
+                            <li>Click and Connect</li>
+                            <li>Returns</li>
+                            <li>FAQ'S</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget-inner-flex join-club">
+                    <div class="inner-flex-heading">
+                        JOIN CLUB
+                    </div>
+                    <div class="content-join-club">
+                        <div class="sign-me-up">
+                            <span>Sign me up to receive emails on new product arrivals, special offers and exclusive
+                                events.</span>
+                            <div class="form-join-club">
+                                <form action="" method="post">
+                                    <input type="email" id="email" placeholder="Email Address">
+                                    <a href="" class="btn primary-button">SIGN-UP</a>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="site-info-box">
+                    © Copyright 2018, Appointment Theme. All Rights Reserved. Theme by <span class="author-link"><a
+                            href="#" target="_blank"> Rara Themes</a></span>. Powered by <span class="wp-link"><a
+                            href="" target="_blank">WordPress</a></span>.
+                </div>
+                <div class="site-icon-box">
+                    <a href="#"><img src="./images/icons-svg/facebook1.svg" alt="instaSVG" /></a>
+                    <a href="#"><img src="./images/icons-svg/instagram1.svg" alt="instaSVG" /></a>
+                    <a href="#"><img src="./images/icons-svg/linkedin1.svg" alt="linkedinSVG" /></a>
+                    <a href="#"><img src="./images/icons-svg/google1.svg" alt="googleSVG" /></a>
+                    <a href="#"><img src="./images/icons-svg/twitter1.svg" alt="twitterSVG" /></a>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
     <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/jquery.js"></script>
     <!-- slick carousel -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/slick-carousel.js"></script>
 
 
     <!-- fancybox 3 -->
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/fancybox.js"></script>
 
 
     <!-- fancybox 2 -->
@@ -432,11 +1174,18 @@
     <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
     <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script> -->
 
+    <!-- parallax.js -->
+    <script src="./js/parallax.js"></script>
+
+    <!-- isotope -->
+    <script src="./js/isotope.js"></script>
+
     <!-- js -->
     <script src="./js/costom.js"></script>
 
 
-    
+
+
 </body>
 
 </html>

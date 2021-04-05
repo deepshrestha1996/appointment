@@ -1,9 +1,9 @@
 .subscribe-form{
-    position: absolute;
+    // position: absolute;
+    display: inline-block;
     background-color: rgba(255,255, 255, 0.9);
     z-index: 100;
-    margin-top: 318px;
-    height: 499px;
+    margin-top: 192px;
     width: 470px;
     
 }
@@ -11,7 +11,9 @@
     // max-width: 300px;
     // margin: 0 auto;
     // padding: 0 15px;
+    
     .heading{
+        display: inline-block;
         margin-left: 50px;
         margin-right: 50px;
         margin-block-start: 1.45em;
@@ -39,21 +41,28 @@
             margin-left: 50px;
             margin-right: 50px;
             font-size: 14px;
-            line-height: 22.4px;
+            line-height: 1.6x;
             border: solid;
             border-color: rgba(224,224, 224, 1);
             border-width: 1px;
+            padding-left: 15px;
             
-    
         }
+        // &:focus{
+        //     outline: none;
+        // }
+        
         
     }
-    button{
+    a{
+        text-align: center;
+        display: block;
         margin-top: 16px;
         margin-left: 50px;
-        margin-right: 50px;
-        width: 370px;
-        height: 48px;
+        width: 100%;
+        max-width: 370px;
+        margin-bottom: 48px;
+        line-height: 48px;
     }
     
 }

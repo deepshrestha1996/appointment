@@ -1,44 +1,45 @@
-.call-to-action{
-    height: 412px;
-    width: 100%;
-    background: url("./../../images/background.png") no-repeat center center;
-    position: relative;
-    margin-top: 893px;
-}
 .layer{
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     height: 412px;
     z-index: 1;
-    .content{
-        font-family: 'Nunito Sans', sans-serif;
-        position: absolute;
-        width: 770px;
-        height: 212px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    .call-to-action-content{
+        display: inline-block;
+        padding-bottom: 83px;
+        width: 100%;
+        max-width: 770px;
+        margin-left: 50%;
+        margin-top: 100px;
+        transform: translateX(-50%);
         color: rgba(255, 255, 255, 1);
-        h2{
-            text-align: center;
+        text-align: center;
+        .call-to-action-heading{
+            font-size: 36px;
+            font-weight: 800;
+            line-height: 1.25em;  
         }
-        p{
-            text-align: center;
+        .call-to-action-desc{
             margin-top: 8px;
-        }
-        .primary-button{
-            margin-left: 226px;
-            height: 48px;
-            width: 148px;
+            font-size: 20px;
+            line-height: 1.6em;
         }
         .success-button{
             margin-left: 16px;
-            height: 48px;
-            width: 160px;
+ 
+        }
+        a{
+            display: inline-block;
+            margin-top: 16px;
+            margin-bottom: 48px;
         }
 
     }
 }
+
+@media only screen and (max-width: 1058px){
+    .layer{
+        .content{
+            width: 95%;
+        }
+    }
+}
+    

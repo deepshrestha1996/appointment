@@ -1,17 +1,93 @@
 {
-  "name": "appointment",
+  "name": "rishi",
   "version": "1.0.0",
-  "description": "nothing",
-  "main": "index.js",
+  "description": "=== Rishi ===",
+  "main": "Gruntfile.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/rishi-theme/rishi.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rishi-theme/rishi/issues"
+  },
+  "homepage": "https://gitlab.com/rishi-theme/rishi#readme",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "@wordpress/scripts": "^13.0.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "ct-build-process": "^5.3.4",
+    "flexy": "^2.4.1",
+    "grunt": "^1.3.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^3.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-wp-i18n": "^1.0.3",
+    "gulp-remove-code": "^3.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-rtlcss": "^1.4.1",
+    "immutable": "3.7.2",
+    "js-csp": "^1.0.1",
+    "negotiator": "^0.6.2",
+    "underscore": "^1.12.0",
+    "webpack-bundle-analyzer": "^3.8.0"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1"
+    "@reach/dialog": "^0.1.2",
+    "@reach/router": "^1.1.1",
+    "@react-spring/web": "^9.0.0-rc.2",
+    "@wordpress/date": "^3.2.0",
+    "@wordpress/i18n": "^3.0.1",
+    "array-move": "^2.1.0",
+    "autoprefixer": "^9.8.6",
+    "bezier-easing": "^2.1.0",
+    "body-scroll-lock": "^2.6.4",
+    "browser-sync": "^2.26.13",
+    "classnames": "^2.2.6",
+    "cssnano": "^4.1.10",
+    "ct-log": "^1.0.0",
+    "ct-wp-js-log": "^1.0.4",
+    "customizer-sync-helpers": "^0.0.26",
+    "deep-equal": "^1.0.1",
+    "dom-chef": "^3.3.0",
+    "dom-focus-lock": "^1.0.4",
+    "downshift": "^6.0.6",
+    "file-saver": "^2.0.0-rc.4",
+    "gulp": "^4.0.2",
+    "gulp-google-webfonts": "^4.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1",
+    "infinite-scroll": "^3.0.5",
+    "match-conditions": "^1.0.6",
+    "md5": "^2.2.1",
+    "nanoid": "^2.0.0",
+    "popper.js": "^1.15.0",
+    "postcss": "^7.0.35",
+    "react-sortable-hoc": "^1.8.3",
+    "react-spring": "8.0.1",
+    "react-virtualized-auto-sizer": "^1.0.2",
+    "react-window": "^1.8.2",
+    "scriptjs": "^2.5.9",
+    "simple-linear-scale": "^1.0.1",
+    "use-force-update": "^1.0.4",
+    "vanilla-lazyload": "^8.17.0",
+    "webfontloader": "^1.6.28"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   }
 }

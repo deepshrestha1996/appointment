@@ -1,0 +1,27 @@
+{
+	"browserSyncOptions": {
+		"open": "external",
+		"proxy": "http://localhost/appointment",
+		"port": "8080",
+		"weinre": {
+	        "port": "1010"
+	    },
+		"notify": true
+	},
+	"browserSyncWatchFiles": ["./**/*.html"],
+	"paths": {
+		"js": "./js",
+		"css": "./css",
+		"root": "./",
+		"img": "./img",
+		"fonts": "./fonts",
+		"imgsrc": "./images",
+		"sass": "./sass",
+		"node": "./node_modules/",
+		"bower": "./bower_components/",
+		"dev": "./src",
+		"dist": "./dist",
+		"distprod": "./dist-product",
+		"vendor": ""
+	}
+}

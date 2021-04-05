@@ -1,0 +1,38 @@
+#site-navigations.main-navigations {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    .nav-container {
+        position: relative;
+        display: flex;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.11;
+        font-size: 14px;
+        letter-spacing: 1px;
+        .main-nav-list-item{
+            padding:30px 40px 30px 0 ;
+        }
+        .nav-content {
+            color: #fff;
+        }
+    }
+
+    .search {
+        padding-right: 40px;
+    }
+}
+@media only screen and (max-width: 1120px) {
+    #site-navigations.main-navigations {
+        .primary-menu-container{
+            padding-bottom: 33px;
+        }
+        .search{
+            padding-bottom: 33px;
+        }
+        .booking-button{
+            padding-bottom: 33px;
+        }
+        
+    }
+}
