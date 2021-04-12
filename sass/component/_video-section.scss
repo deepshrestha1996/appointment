@@ -11,7 +11,8 @@
         display: inline-block;
         text-align: center;
         margin-top: 120px;
-        width: 482px;
+        width: 100%;
+        max-width: 482px;
         margin-left: 50%;
         transform: translateX(-50%);
         .video-content{

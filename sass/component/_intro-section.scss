@@ -4,6 +4,12 @@
     .text-img-holder{
         display: flex;
     }
+    .img-holder{
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
     .text-holder{
         background-color: #f7f9ff;
         flex-basis: 0;

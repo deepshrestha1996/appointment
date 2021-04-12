@@ -151,6 +151,21 @@
     .button-wrapper{
         margin: 15px 0 0 20px;
     }
+    .mbl-header-bottom{
+        .header-block{
+            margin: 20px;
+            svg{
+                vertical-align: top;
+                height: 20px;
+                width: 20px;
+            }
+            a{
+                padding-bottom: 10px;
+                padding-left: 10px;
+                color: #000;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 1120px) {
     #site-navigations.main-navigations {
