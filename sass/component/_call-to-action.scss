@@ -21,15 +21,15 @@
             margin-top: 8px;
             font-size: 20px;
             line-height: 1.6em;
+            padding-bottom: 48px;
         }
-        .success-button{
-            margin-left: 16px;
- 
-        }
-        a{
-            display: inline-block;
-            margin-top: 16px;
-            margin-bottom: 48px;
+        .purchase-learnmore{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 336px;
+            margin: 0 auto;
         }
 
     }
